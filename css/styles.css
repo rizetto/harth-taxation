@@ -1,10 +1,151 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
 }
 
+body {
+    background-color: #0b1d33;
+}
+
+img,
+video {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px;
+}
+
+p,
+li,
+a,
+strong,
+em {
+    font-size: 1.6rem;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav,
+ul {
+    display: flex;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1d33;
+    padding: 20px;
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+
+ul.nav-items--secondary {
+    gap: 2rem;
+}
+
+a.nav-link--title {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* Hero */
+
+header.header--hero {
+    height: 500px;
+    position: relative;
+}
+
+header.header--hero:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.6;
+}
+
+header.header--hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.content {
+    width: 600px;
+    margin: auto;
+}
+
+/* Tweet */
+section.section--tweets {
+    margin: 100px 0;
+}
+
+.tweet {
+    border-radius: 20px;
+    border: 2px solid #c4c4c4;
+    padding: 20px;
+}
+
+.tweet-information {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.tweet-profile {
+    height: 70px;
+    width: 70px;
+    border: 2px dashed #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.tweet-profile img {
+    border-radius: inherit;
+}
+
+.tweet-detail > p {
+    margin: 30px 0;
+}
+
+.tweet-banner strong {
+    font-size: 2rem;
+    margin-top: 20px;
+}
