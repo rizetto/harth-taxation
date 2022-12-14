@@ -6,7 +6,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: #ffffff;
 }
 
@@ -121,6 +121,7 @@ section.section--tweets {
     border-radius: 20px;
     border: 2px solid #c4c4c4;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .tweet-information {
